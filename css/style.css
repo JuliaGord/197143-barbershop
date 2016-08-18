@@ -19,7 +19,7 @@
 	.clearfix:after {
 	  content: "";
 	  display: table;
-	  width: 100%;
+	  clear: both;
 	}
 	/*======================================
 	 Страница товара
@@ -47,10 +47,15 @@
 	  padding-left: 8px;
 	  background-color: #F9525B;
 	  margin-right: 10px;
+	  font-size: 0;
 	}
 	.main-navigation li {
 	  display: inline-block;
+	  vertical-align: top;
 	  background-color: #255C85;
+	  font-size: 16px;
+	  line-height: 20px;
+	  color: #fff;
 	}
 	.user-block {
 	  float: left;
@@ -65,10 +70,13 @@
 	.breadcrumbs {
 	  background-color: #FEEBE0;
 	  margin-bottom: 55px;
+	  font-size: 0;
 	}
 	.breadcrumbs li {
 	  display: inline-block;
+	  vertical-align: top;
 	  margin-right: 10px;
+	  font-size: 14px;
 	}
 	.item {
 	  background-color: #3B3634;
@@ -78,7 +86,7 @@
 	  float: left;
 	  margin-right: 90px;
 	}
-	.preview-link  {
+	.preview-link {
 	  float: left;
 	  width: 140px;
 	  margin-right: 20px;
@@ -91,13 +99,10 @@
 	  background-color: #F9A01F;
 	  float: right;
 	  width: 390px;
-	  min-height: 471px;
 	  padding-top: 25px;
 	  padding-bottom: 185px;
 	}
 	.item-description-left {
-	  width: 200px;
-	  min-height: 24px;
 	  outline: 1px solid #666;
 	}
 	.main-footer {
@@ -110,22 +115,16 @@
 	  float: left;
 	  width: 320px;
 	  margin-right: 60px;
-	  /* Только для оформления сетки */
-	  min-height: 90px;
 	  background-color: #73B0E3;
 	}
 	.footer-social {
 	  float: left;
 	  width: 180px;
-	  /* Только для оформления сетки */
-	  min-height: 90px;
 	  background-color: #73B0E3;
 	}
 	.footer-copyright {
 	  float: right;
 	  width: 180px;
-	  /* Только для оформления сетки */
-	  min-height: 90px;
 	  background-color: #73B0E3;
 	}
 	figure {
@@ -170,8 +169,16 @@
 	  vertical-align: top;
 	}
 	.catalog-item:nth-child(3n) {
-		margin-right: 0;
+	  margin-right: 0;
 	}
 	.catalog-link-pages {
 	  margin-top: 45px;
+	  font-size: 0;
+	}
+	.catalog-link-pages a {
+	  display: inline-block;
+	  font-size: 14px;
+	  vertical-align: top;
+	  line-height: 18px;
+	  color: #fff;
 	}
