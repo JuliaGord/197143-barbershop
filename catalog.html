@@ -7,7 +7,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="catalog-body">
   <header class="main-header">
     <div class="container clearfix">
       <div class="catalog-logo">
@@ -18,7 +18,7 @@
       <nav class="main-navigation">
         <ul>
           <li>
-            <a href="#">Информация</a>
+            <a href="index.html">Информация</a>
           </li>
           <li>
             <a href="#">Новости</a>
@@ -57,36 +57,27 @@
 		<form class="catalog-filter" action="#" method="post">
 		  <fieldset>
 			<legend>Производители:</legend>
-			<label>
-			  <input type="checkbox" name="brend-1" value="Baxter of California" checked>Baxter of California
-			</label>
-			<label>
-			  <input type="checkbox" name="brend-2" value="Mr. Matty">Mr. Matty
-			</label>
-			<label>
-			  <input type="checkbox" name="brend-3" value="Suavecito" checked>Suavecito
-			</label>
-			<label>
-			  <input type="checkbox" name="brend-4" value="Malin-Goetz">Malin-Goetz
-			</label>
-			<label>
-			  <input type="checkbox" name="brend-5" value="Murray's">Murray's
-			</label>
-			<label>
-			  <input type="checkbox" name="brend-6" value="American crew" checked>American crew
-			</label>
+              <input type="checkbox" name="brend-1" id="ch1" value="" checked>
+			  <label for="ch1">Baxter of California</label>
+              <input type="checkbox" name="brend-2" id="ch2" value="">
+              <label for="ch2">Mr. Matty</label>
+			 <input type="checkbox" name="brend-3" id="ch3" value="" checked>
+              <label for="ch3">Suavecito</label>
+			  <input type="checkbox" name="brend-4" id="ch4" value="">
+              <label for="ch4">Malin-Goetz</label>
+			  <input type="checkbox" name="brend-5" id="ch5" value="">
+              <label for="ch5">Murray's</label>
+			  <input type="checkbox" name="brend-6" id="ch6" value="" checked>
+              <label for="ch6">American crew</label>
 		  </fieldset>
-		  <fieldset>
+		  <fieldset class="group-prod">
 			<legend>Группы товаров:</legend>
-			<label>
-			  <input type="radio" name="group">Бритвенные принадлежности
-			</label>
-			<label>
-			  <input type="radio" name="group" checked>Средства для ухода
-			</label>
-			<label>
-			  <input type="radio" name="group">Аксессуары
-			</label>
+             <input type="radio" id="rd1" name="group">
+              <label for="rd1">Бритвенные<br> принадлежности</label>
+			  <input type="radio" id="rd2" name="group" checked>
+              <label for="rd2">Средства для ухода</label>
+			  <input type="radio" id="rd3" name="group">
+              <label for="rd3">Аксессуары</label>
 		  </fieldset>
 		  <button class="catalog-btn-show" type="submit">Показать</button>
 		</form>
@@ -96,19 +87,19 @@
 		  <a class="" href="#">
 			<figure>
 			  <img src="img/travel_bax_of_california.jpg" alt="Набор для путешествий" width="220" height="165">
-			  <h2 class="catalog-item-title">Набор для путешествий <span>«Baxter of California»</span></h2>
+			  <h2 class="catalog-item-title"><div>Набор для путешествий</div> «Baxter of California»</h2>
 			</figure>
 		  </a>
 		  <div class="catalog-buy">
 			<div class="catalog-buy-price">2 900 РУБ.</div>
 			<a class="catalog-buy-link" href="#">Купить</a>
 		  </div>
-		</article>
-		<article class="catalog-item">
+          </article>
+          <article class="catalog-item">
 		  <a class="" href="#">
 			<figure>
 			  <img src="img/conditioner_bax_of_cal.jpg" alt="Увлажняющий кондиционер" width="220" height="165">
-			  <h2 class="catalog-item-title">Увлажняющий кондиционер <span>«Baxter of California»</span></h2>
+                <h2 class="catalog-item-title"><div>Увлажняющий кондиционер</div>«Baxter of California»</h2>
 			</figure>
 		  </a>
 		  <div>
@@ -120,7 +111,7 @@
 		  <a class="" href="#">
 			<figure>
 			  <img src="img/gel_suavecito.jpg" alt="Гель для волос" width="220" height="165">
-			  <h2 class="catalog-item-title">Гель для волос <span>«Suavecito»</span></h2>
+                <h2 class="catalog-item-title"><div>Гель для волос</div>«Suavecito»</h2>
 			</figure>
 		  </a>
 		  <div>
@@ -132,7 +123,7 @@
 		  <a class="" href="#">
 			<figure>
 			  <img src="img/clay_amer_crew.jpg" alt="Глина для укладки волос" width="220" height="165">
-			  <h2 class="catalog-item-title">Глина для укладки волос <span>«American crew»</span></h2>
+                <h2 class="catalog-item-title"><div>Глина для укладки волос</div>«American crew»</h2>
 			</figure>
 		  </a>
 		  <div>
@@ -144,7 +135,7 @@
 		  <a class="" href="#">
 			<figure>
 			  <img src="img/gel_amer_crew.jpg" alt="Гель для волос" width="220" height="165">
-			  <h2 class="catalog-item-title">Гель для волос <span>«American crew»</span></h2>
+                <h2 class="catalog-item-title"><div>Гель для волос</div>«American crew»</h2>
 			</figure>
 		  </a>
 		  <div>
@@ -156,7 +147,7 @@
 		  <a class="" href="#">
 			<figure>
 			  <img src="img/for_shave__bax_of_cal.jpg" alt="Набор для бритья" width="220" height="165">
-			  <h2 class="catalog-item-title">Набор для бритья <span>«Baxter of Californ</span></h2>
+                <h2 class="catalog-item-title"><div>Набор для бритья</div>«Baxter of Californ</h2>
 			</figure>
 		  </a>
 		  <div>
@@ -165,10 +156,10 @@
 		  </div>
 		</article>
 		<div class="catalog-link-pages">
-		  <a href="#" class="catalog-link-one">1</a>
-		  <a class="catalog-link-two catalog-link-two-active">2</a>
-		  <a href="#" class="catalog-link-three">3</a>
-		  <a href="#" class="catalog-link-four">4</a>
+		  <a href="#">1</a>
+		  <a class="catalog-link-active">2</a>
+		  <a href="#">3</a>
+		  <a href="#">4</a>
 		</div>
 	  </div>
 	</div>
@@ -183,9 +174,9 @@
        </section>
        <section class="footer-social">
          <p>Давайте дружить!</p>
-         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+         <a class="social-btn icon-vkontakte" href="#"></a>
+         <a class="social-btn icon-facebook" href="#"></a>
+         <a class="social-btn icon-youtube" href="#"></a>
        </section>
        <section class="footer-copyright">
          <p>Разработано:</p>
